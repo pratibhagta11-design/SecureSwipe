@@ -1,40 +1,69 @@
-# SecureSwipe
-Credit card fraud detection using machine learning, with comparative model evaluation and research documentation.
 
-# SecureSwipe: Credit Card Fraud Detection System
+# 🔐 SecureSwipe: Credit Card Fraud Detection System
 
-## Overview
+### Machine Learning-Based Fraud Detection | Internship Project & Research Paper
 
-SecureSwipe is a machine learning-based credit card fraud detection project developed during my machine learning internship. The project focuses on identifying fraudulent transactions by training and comparing multiple classification models.
+SecureSwipe is a machine learning project developed during my internship to identify fraudulent credit card transactions. The project explores data preprocessing, exploratory data analysis, and comparative evaluation of multiple machine learning models.
 
-## Objectives
+The study focuses on handling imbalanced transaction data and evaluating model performance using relevant classification metrics.
+
+---
+
+## 📌 Project Overview
+
+Credit card fraud detection is a challenging machine learning problem because fraudulent transactions represent a very small proportion of total transactions.
+
+In this project, different machine learning models were trained and compared using the European Credit Card Fraud Detection dataset to study their performance in identifying fraudulent transactions.
+
+## 🎯 Objectives
 
 - Analyze and preprocess credit card transaction data.
-- Perform exploratory data analysis (EDA).
-- Train and compare different machine learning models.
-- Evaluate model performance using multiple metrics.
-- Identify an effective model for fraud detection.
+- Perform Exploratory Data Analysis (EDA).
+- Train multiple machine learning classification models.
+- Compare model performance using different evaluation metrics.
+- Identify the model with the strongest reported performance in this study.
 
-## Dataset
+## 📊 Dataset
 
-The project uses the European Credit Card Fraud Detection dataset from Kaggle.
+**Dataset:** European Credit Card Fraud Detection
 
-- Total transactions: 284,807
-- Fraudulent transactions: 492
+- Total Transactions: 284,807
+- Fraudulent Transactions: 492
+- Legitimate Transactions: 284,315
 - Features: V1–V28, Time, Amount
-- Target: Class (0 = Legitimate, 1 = Fraudulent)
+- Target Variable: Class
+  - `0` – Legitimate Transaction
+  - `1` – Fraudulent Transaction
 
-## Machine Learning Models
+Most transaction features are anonymized using Principal Component Analysis (PCA).
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- Gradient Boosting
+Dataset Source:
+[Kaggle – Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 - XGBoost
+- Jupyter Notebook
 
-## Evaluation Metrics
+## 🤖 Machine Learning Models
+
+The following models were implemented and compared:
+
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
+4. Support Vector Machine (SVM)
+5. K-Nearest Neighbors (KNN)
+6. Gradient Boosting
+7. XGBoost
+
+## 📈 Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -42,11 +71,13 @@ The project uses the European Credit Card Fraud Detection dataset from Kaggle.
 - F1-Score
 - ROC-AUC
 
-## Results
+Since the dataset is highly imbalanced, multiple evaluation metrics were considered instead of relying only on accuracy.
 
-Random Forest achieved the following reported results in our study:
+## 🏆 Reported Results
 
-| Metric | Score |
+According to the research paper, Random Forest achieved the following results:
+
+| Metric | Performance |
 |---|---|
 | Accuracy | 99.92% |
 | Precision | 96.5% |
@@ -54,24 +85,61 @@ Random Forest achieved the following reported results in our study:
 | F1-Score | 94.1% |
 | ROC-AUC | 0.996 |
 
-These results are based on the experimental evaluation documented in the research paper.
+These figures represent the results reported in the accompanying research paper. They should not be interpreted as a guarantee of performance on new or real-world transaction data.
 
-## Repository Contents
+## 📂 Repository Structure
 
-- `notebooks/` – Machine learning project notebook
-- `research-paper/` – Research paper PDF
+```text
+SecureSwipe/
+│
+├── notebooks/
+│   └── credit_card_fraud_detection.ipynb
+│
+├── research-paper/
+│   └── SecureSwipe_Research_Paper.pdf
+│
+├── README.md
+└── requirements.txt
+```
 
-## Future Work
+## 🔍 Project Workflow
+
+1. Dataset Loading
+2. Data Understanding and Preprocessing
+3. Exploratory Data Analysis
+4. Feature Analysis
+5. Model Training
+6. Model Evaluation
+7. Comparative Performance Analysis
+
+## 📄 Research Paper
+
+The research paper associated with this project is included in the `research-paper/` directory.
+
+**Title:** SecureSwipe: Credit Card Fraud Detection System Using Machine Learning
+
+**Authors:**
+- Pratibha Gupta
+- Nishu
+
+## 🚀 Future Work
 
 - Real-time fraud detection
 - Explainable AI (XAI)
 - Improved class imbalance handling
-- Validation using additional datasets
+- Evaluation on additional datasets
+- Investigation of evolving fraud patterns
 
-## Authors
+## 👩‍💻 Authors
 
-Pratibha Gupta  
-Nishu
-
+**Pratibha Gupta**  
 Mathematics and Computing  
 Indira Gandhi Delhi Technical University for Women
+
+**Nishu**  
+Mathematics and Computing  
+Indira Gandhi Delhi Technical University for Women
+
+---
+
+⭐ This repository documents the machine learning internship project and its associated research work.
